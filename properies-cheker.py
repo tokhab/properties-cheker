@@ -1,5 +1,6 @@
 import json
 import zxcvbn
+import re
 from requests import Request, Session
 
 req = Request('LIST', url="http://172.17.0.2:1234/v1/secret/metadata/", headers={"X-Vault-Token": "myroot"})
